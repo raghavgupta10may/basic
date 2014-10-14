@@ -1,0 +1,10 @@
+<?php
+include_once("init.php");
+if(!isset($_GET['id'])){
+  header('location:blog/index.php');
+  die();
+  }
+  delete(categories,$_GET['id']);
+  header('location:blog/category_list.php');
+  die();
+  ?>
